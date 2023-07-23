@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-primary: #93cb52;
+    --color-secondary: #333333;
+    --color-light-secondary: rgba(51,51,51,0.8);
+    --color-light:#efefef;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+#navbar{
+    background-color: var(--color-light-secondary);
+    padding: 0.5rem 2rem;
+    overflow: auto;
+    box-shadow: 1px 2px 4px 4px rgba(37,37,37,0.2);
+    
+}
+#navbar .logo{
+    float: left;
+    color: var(--color-light);
+    font-size: 3rem;
+    margin-top: 0.2rem;
+    font-weight: 700;
+}
+
+#navbar .logo span{
+    color: var(--color-primary);
+}
+
+#navbar .list{
+    float: right;
+    margin-top: 0.8rem; 
+
+}
+#navbar .list .link{
+    float: left;
+}
+#navbar .list .link a{
+    color: var(--color-light);
+    font-size: 2rem;
+    padding: 1.2rem 3rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in;
+}
+#navbar .list .link a:hover{
+    background-color: var(--color-primary);
+}
+#header{
+    background: url("./assets/bg.jpg")  no-repeat center center/cover;
+    height: 100vh;
+    color: var(--color-light);
+    overflow: auto;
+    
+}
+#header .container{
+    text-align: center;
+    
+}
+#header .container .heading{
+    margin-top: 25rem;
+}
+#header .container .heading h1{
+    font-size: 8rem;
+}
+#header .container .heading p{
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+.readme{
+    background-color: #93cb52;
+    color: var(--color-light);
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500%;
+    transition: all 0.2s ease-in;
+
+}
+.readme:hover{
+    cursor: pointer;
+    background-color: #59832f;
+}
+#what{
+    margin: 2rem auto;
+    overflow: auto;
+}
+#what .heading-what{
+    text-align: center;
+}
+#what .heading-what h1{
+    font-size: 3rem;
+}
+#what .heading-what h1 span{
+    color: var(--color-primary);
+}
+#what .w-container{
+    margin: 2rem 3rem;
+}
+#what .w-container .w-box{
+    float: left;
+    margin-right: 3.3rem;
+    color: var(--color-secondary);
+    text-align: center;
+    width: 31%;
+}
+#what .w-container .w-box .icon{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    margin-bottom: 2.5rem;
+    margin-left:20rem;
+}
+#what .w-container .w-box .icon i{
+    margin-top: 2rem;
+  color: var(--color-secondary);
+  font-size: 3rem;
+}
+
+#what .w-container .w-box h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#what .w-container .w-box p{
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+#who{
+    clear: both;
+    margin: 5rem 0;
+    background-color: var(--color-secondary);
+    overflow: auto;
+}
+
+#who .image-sec{
+    background: url("./assets/people.jpg") no-repeat center center/cover;
+    width: 50%;
+    float: left;
+    height: 400px;
+
+}
+#who .who-c{
+    width: 50%;
+    float: right;
+    padding: 1rem 0rem;
+    color: var(--color-light);
+
+}
+#who .who-c h1{
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    
+}
+#who .who-c h1 span{
+    color: var(--color-primary);
+    
+}
+#who .who-c p{
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#who .who-c h2{
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    
+}
+
+#who .who-c ul li{
+    font-size: 1.5rem;
+    line-height: 4.2rem;
+    border-bottom: 0.05rem solid rgb(113, 113, 113);
+    margin-left: 2rem;
+    margin-right: 4rem;
+
+}
+#our-logo{
+    margin: 5rem auto;
+}
+#our-logo .our-head{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+#our-logo .our-head span{
+    color: var(--color-primary);
+}
+#our-logo .Clients{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+#our-logo .clients img{
+    width: 60%;
+    margin: 2rem 0;
+}
+#our-logo .clients img:last-child {
+    margin: 0;
+  }
+#contact-us{
+    margin-top: 5rem auto;
+    overflow: auto;
+    background-color: var(--color-primary);
+
+}
+#contact-us .form-text{
+    width: 50%;
+    float: left;
+    padding: 2.5rem;
+}
+#contact-us .form-text .c-heading{
+    margin-bottom: .5rem;
+    color: var(--color-light);
+    font-size: 3rem;
+}
+#contact-us .form-text .text{
+    margin-bottom: 2rem;
+    color: var(--color-light);
+    font-size: 1.5rem;
+}
+#contact-us .form-text .form{
+    margin: 3rem 0.1rem;
+}
+#contact-us .form-text .form .form-control{
+    margin-bottom: 2rem;
+}
+#contact-us .form-text .form .form-control label{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-light);
+}
+#contact-us .form-text .form .form-control input,#contact-us .form-text .form .form-control textarea{
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    padding: 1.4rem 1.6rem;
+    font-size: 1.2rem;
+    width: 100%;
+
+}
+#contact-us .form-text .form .form-control textarea{
+    height: 10rem;
+    border-radius: 1rem;
+    width: 100%;
+}
+#contact-us .map{
+    float: right;
+    width: 46%;
+
+}
+#contact-us .map iframe{
+    width: 100%;
+    height: 61rem;
+}
+#footer {
+    background-color: var(--color-secondary);
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2rem 1rem;
+    color: var(--color-light);
+  }
+
+
